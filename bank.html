@@ -18,16 +18,34 @@
             <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto">
                 <div class="bg-green-400 p-8 rounded text-white">
                     <h4 class="text-4xl">Deposit</h4>
-                    <h2 class="text-6xl">$<span>00</span></h2>
+                    <h2 class="text-6xl">$<span id="deposit-total">00</span></h2>
                 </div>
                 <div class="bg-orange-400 p-8 rounded text-white">
                     <h4 class="text-4xl">Withdraw</h4>
-                    <h2 class="text-6xl">$<span>00</span></h2>
+                    <h2 class="text-6xl">$<span id="withdraw-total">00</span></h2>
                 </div>
                 <div class="bg-violet-400 p-8 rounded text-white">
                     <h4 class="text-4xl">Balance</h4>
-                    <h2 class="text-6xl">$<span>00</span></h2>
+                    <h2 class="text-6xl">$<span id="balance-total">00</span></h2>
                 </div>
+            </div>
+        </section>
+        <!-- Deposit and Withdraw section  -->
+        <section class="mt-12">
+            <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto">
+                <div class="bg-fuchsia-400 p-8 rounded text-white">
+                    <h4 class="text-4xl mb-4">Please Deposit</h4>
+                    <input id="deposit-filed" class="w-9/12 p-2 rounded text-black block mb-3 text-2xl" type="text"
+                        placeholder="$ ammount you want to deposit">
+                    <button id="btn-deposit" class="bg-indigo-500 px-8 py-3 rounded text-2xl">Deposit</button>
+                </div>
+                <div class="bg-sky-400 p-8 rounded text-white">
+                    <h4 class="text-4xl mb-4">Please Withdraw</h4>
+                    <input id="withdraw-field" class="w-9/12 p-2 rounded text-black block mb-3 text-2xl" type="text"
+                        placeholder="$ ammount you want to Withdraw">
+                    <button id="btn-withdraw" class="bg-indigo-500 px-8 py-3 rounded text-2xl">Withdraw</button>
+                </div>
+
             </div>
         </section>
     </main>
